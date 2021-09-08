@@ -20,7 +20,7 @@ app.use(morgan("tiny"));
 app.use("/movies", movieRoutes);
 
 app.get("/", function (req, res, next) {
-  return res.send('<h1>Welcome to Ratorly! Things still under construction.</h1>');
+  return res.redirect(301, "https://ratorly.surge.sh/");
 });
 
 /** Handle 404 errors --  this matches everything*/
